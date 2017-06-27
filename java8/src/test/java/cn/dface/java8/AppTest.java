@@ -1,4 +1,4 @@
-package cn.dface.hightlight_springmvc4;
+package cn.dface.java8;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
