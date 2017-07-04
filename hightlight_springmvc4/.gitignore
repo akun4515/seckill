@@ -1,1 +1,9 @@
 /target/
+/.settings
+*/.settings
+*/target
+.project
+.classpath
+.class
+.DS_Store
+/shell/*

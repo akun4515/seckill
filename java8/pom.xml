@@ -21,6 +21,13 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.jvnet.hudson/trilead-ssh2 -->
+		<dependency>
+			<groupId>org.jvnet.hudson</groupId>
+			<artifactId>trilead-ssh2</artifactId>
+			<version>build214-hudson-1</version>
+		</dependency>
+
 		<!-- 自动生成get set toString方法 https://mvnrepository.com/artifact/org.projectlombok/lombok -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>

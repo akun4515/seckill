@@ -138,6 +138,37 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.jvnet.hudson/trilead-ssh2 -->
+		<dependency>
+			<groupId>org.jvnet.hudson</groupId>
+			<artifactId>trilead-ssh2</artifactId>
+			<version>build214-hudson-1</version>
+		</dependency>
+
+		<!-- 自动生成get set toString方法 https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.16.14</version>
+		</dependency>
+		<!-- swagger2 -->
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.6.1</version>
+		</dependency>
+		<!-- swagger2 ui -->
+		<dependency>
+			<groupId>io.springfox.ui</groupId>
+			<artifactId>springfox-swagger-ui-rfc6570</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.33</version>
+		</dependency>
 
 	</dependencies>
 
