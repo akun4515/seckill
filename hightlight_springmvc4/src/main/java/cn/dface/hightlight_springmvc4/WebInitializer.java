@@ -9,7 +9,8 @@ import org.springframework.web.context.support.AnnotationConfigWebApplicationCon
 import org.springframework.web.servlet.DispatcherServlet;
 
 public class WebInitializer implements WebApplicationInitializer{
-
+	
+	@Override
 	public void onStartup(ServletContext servletContext) throws ServletException {
 			AnnotationConfigWebApplicationContext ctx = new AnnotationConfigWebApplicationContext();
 			ctx.register(MyWebMvcConfig.class);
@@ -17,6 +18,7 @@ public class WebInitializer implements WebApplicationInitializer{
 			Dynamic servlet = servletContext.addServlet("dispatcher", new DispatcherServlet(ctx));
 			servlet.addMapping("/");
 			servlet.setLoadOnStartup(1);
+			servletContext.setInitParameter("spring.profiles.default", "dev");
 			servlet.setAsyncSupported(true);
 	}
 	

@@ -5499,3 +5499,26 @@ Caused by: java.io.IOException: Broken pipe
 2017-07-07 14:22:50.136  INFO 90144 --- [MessageBroker-2] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[3 current WS(3)-HttpStream(0)-HttpPoll(0), 3 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(3)-CONNECTED(3)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 8, active threads = 0, queued tasks = 0, completed tasks = 21], outboundChannelpool size = 6, active threads = 0, queued tasks = 0, completed tasks = 6], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 4, completed tasks = 11]
 2017-07-07 14:26:23.822 DEBUG 90144 --- [clientInboundChannel-9] .WebSocketAnnotationMethodMessageHandler : Searching methods to handle SEND /welcome session=guhfp3w0
 2017-07-07 14:26:23.824 DEBUG 90144 --- [clientInboundChannel-9] .WebSocketAnnotationMethodMessageHandler : Invoking cd.dface.websocket.WsController#say[1 args]
+2017-07-07 14:52:50.216  INFO 90144 --- [MessageBroker-3] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[3 current WS(3)-HttpStream(0)-HttpPoll(0), 3 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(3)-CONNECTED(3)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 24], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 9], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 4, completed tasks = 588]
+2017-07-07 14:58:39.797  INFO 90144 --- [Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3b94d659: startup date [Fri Jul 07 14:21:48 CST 2017]; root of context hierarchy
+2017-07-07 14:58:39.808  INFO 90144 --- [Thread-3] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2017-07-07 14:58:39.811 DEBUG 90144 --- [Thread-3] s.w.s.s.t.s.WebSocketServerSockJsSession : Closing SockJS session guhfp3w0 with CloseStatus[code=1001, reason=null]
+2017-07-07 14:58:39.813 DEBUG 90144 --- [Thread-3] o.s.w.s.adapter.NativeWebSocketSession   : Closing StandardWebSocketSession[id=0, uri=/endpointWisely/554/guhfp3w0/websocket]
+2017-07-07 14:58:39.814 DEBUG 90144 --- [Thread-3] s.w.s.h.LoggingWebSocketHandlerDecorator : WebSocketServerSockJsSession[id=guhfp3w0] closed with CloseStatus[code=1001, reason=null]
+2017-07-07 14:58:39.815 DEBUG 90144 --- [Thread-3] o.s.w.s.m.SubProtocolWebSocketHandler    : Clearing session guhfp3w0
+2017-07-07 14:58:39.818 DEBUG 90144 --- [Thread-3] s.w.s.s.t.s.WebSocketServerSockJsSession : Closing SockJS session 622beadp with CloseStatus[code=1001, reason=null]
+2017-07-07 14:58:39.818 DEBUG 90144 --- [Thread-3] o.s.w.s.adapter.NativeWebSocketSession   : Closing StandardWebSocketSession[id=1, uri=/endpointWisely/327/622beadp/websocket]
+2017-07-07 14:58:39.819 DEBUG 90144 --- [Thread-3] s.w.s.h.LoggingWebSocketHandlerDecorator : WebSocketServerSockJsSession[id=622beadp] closed with CloseStatus[code=1001, reason=null]
+2017-07-07 14:58:39.819 DEBUG 90144 --- [Thread-3] o.s.w.s.m.SubProtocolWebSocketHandler    : Clearing session 622beadp
+2017-07-07 14:58:39.820 DEBUG 90144 --- [Thread-3] s.w.s.s.t.s.WebSocketServerSockJsSession : Closing SockJS session q7kew8kn with CloseStatus[code=1001, reason=null]
+2017-07-07 14:58:39.880 DEBUG 90144 --- [Thread-3] o.s.w.s.adapter.NativeWebSocketSession   : Closing StandardWebSocketSession[id=2, uri=/endpointWisely/298/q7kew8kn/websocket]
+2017-07-07 14:58:39.881 DEBUG 90144 --- [Thread-3] s.w.s.h.LoggingWebSocketHandlerDecorator : WebSocketServerSockJsSession[id=q7kew8kn] closed with CloseStatus[code=1001, reason=null]
+2017-07-07 14:58:39.881 DEBUG 90144 --- [Thread-3] o.s.w.s.m.SubProtocolWebSocketHandler    : Clearing session q7kew8kn
+2017-07-07 14:58:39.882  INFO 90144 --- [Thread-3] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2017-07-07 14:58:39.882  INFO 90144 --- [Thread-3] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2017-07-07 14:58:39.882  INFO 90144 --- [Thread-3] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2017-07-07 14:58:39.883  INFO 90144 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-07-07 14:58:39.884  INFO 90144 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'brokerChannelExecutor'
+2017-07-07 14:58:39.884  INFO 90144 --- [Thread-3] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2017-07-07 14:58:39.885  INFO 90144 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2017-07-07 14:58:39.885  INFO 90144 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'clientInboundChannelExecutor'
